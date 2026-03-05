@@ -22,3 +22,12 @@
 
 ## To stop a container
 --> docker stop <image_id>
+
+## To start zooker server
+--> sh bin/zookeeper-server-start.sh config/zookeeper.properties
+
+## To start Kafka Broker
+--> sh bin/kafka-server-start.sh config/server.properties
+
+## List out all topics names
+--> sh bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
